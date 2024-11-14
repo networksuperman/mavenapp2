@@ -1,2 +1,2 @@
-# mavenapp2
-for test and labs
+# mavenapp
+app for jenkins lab
