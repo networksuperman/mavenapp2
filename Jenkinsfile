@@ -9,6 +9,15 @@ pipeline
         maven 'Maven'
     }
 
+    environment {
+        APP_NAME = "devopslifeapp"
+        RELEASE = "1.0.0"
+        DOCKER_USER = "networkdockering"
+        DOCKER_PASS = 'dockerhub'
+        IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
+        IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
+    }
+
     stages {
         stage("Cleanup Workspace") {
             steps {
