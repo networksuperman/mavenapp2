@@ -7,4 +7,4 @@ FROM eclipse-temurin:17.0.6_10-jdk
 WORKDIR /app
 COPY --from=build /app/webapp/target/webapp.jar /app/
 EXPOSE 8080
-CMD ["java","-jar","webapp.jar"]
+CMD ["java","-jar","webapp"]
